@@ -1,0 +1,1413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LUMS_Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <style>
+        body {
+            width: 100%;
+            height: 100vh;
+        }
+        
+        .menu-div {
+            float: left;
+        }
+
+        .menu-div2 {
+            float: left;
+        }
+
+        .menu-div3 {
+            float: left;
+        }
+
+        .menu-div4 {
+            float: left;
+        }
+
+        .menu-div2,
+        .menu-div3,
+        .menu-div4 {
+            margin-top: 8.1vh;
+        }
+
+        .menu-div a {
+            text-decoration: none;
+        }
+
+        .menu-div2 a {
+            text-decoration: none;
+        }
+        .menu-div3 a {
+            text-decoration: none;
+        }
+        .menu-div4 a {
+            text-decoration: none;
+        }
+        .menu-div p:hover {
+            color: blue;
+        }
+        .menu-div2 p:hover {
+            color: blue;
+        }
+        .menu-div3 p:hover {
+            color: blue;
+        }
+        .menu-div4 p:hover {
+            color: blue;
+        }
+
+      
+        .nav{
+            width: 100%;
+            height: 15vh;
+            font-weight: bolder;
+            color: white;
+            background-color: blue;
+        }
+        .nav ul{
+            list-style-type: none;
+            display: flex;
+            position: absolute;
+            right: 2%;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            transition: all 0.5s ease-in-out;
+        }
+        .nav a:hover {
+            color: skyblue;
+            text-decoration: underline skyblue;
+        }
+        #click:checked ~ ul{
+            left: 0%;
+            transition: 1s;
+        }
+        #click{
+            display: none;
+        }
+        #click:checked ~ label i:before{
+            content: '\f00d';
+        }
+        .nav ul>li{
+            padding: 30px;
+        }
+        label>.icon{
+            position: absolute;
+            right: 1%;
+            font-size: 30px;
+            margin-top: 5%;
+            display: none;
+          
+        } 
+       .dropdown #btn1{
+        margin-left: 10%;
+        margin-top: -5%;
+       }
+        @media (min-width:603px) {
+            .nav ul{
+            list-style-type: none;
+            display: flex;
+            position: absolute;
+            
+            z-index: 3000;
+        }
+        } 
+        
+        @media (max-width:603px) {
+            label>.icon{
+            color: white;
+            display: block;
+            right: 5%;
+        } 
+        .dropdown #btn1{
+       
+        margin-top: -10%;
+       }
+            .nav ul{
+            top: 15vh;
+            background-color:blue;
+            display: block;
+            text-align: center;
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            z-index: 300;
+            left: -100%;
+        }
+}
+
+
+
+
+
+
+
+
+.fl-welcome {
+            display: flex;
+            margin-top: 8vh;
+        }
+        .welcome-right button {
+            width: 19em;
+            height: 9.25vh;
+        }
+        .welcome-right button:hover {
+            color: blue;
+        }
+        .welcome-right p:hover {
+            color: blue;
+            cursor: pointer;
+        }
+        .welcome-right {
+            border: 1px hidden;
+            margin-left: 14.7%;
+        }
+        .welcome-left {
+            margin-left: 10%;
+        }
+        .welcome-left p {
+            font-size: 20px;
+            line-height: 6vh;
+            font-family: "poppins", sans-serif;
+            color: #777777;
+            margin-top: 4vh;
+            font-weight: normal;
+            text-align: justify;
+        }
+
+        .welcome-left h1 {
+            font-size: 45px;
+            font-weight: normal;
+            font-family: 'Noto Sans';
+            margin-left: -1vh;
+        }
+
+        .experience {
+            margin-top: 12vh;
+        }
+
+        .experience p {
+            margin-top: 3vh;
+            font-size: 20px;
+        }
+        .fl-tayyaba {
+            display: flex;
+            margin-top: 7vh;  
+        }
+        .tayyaba-img {
+            margin-left: 10%;
+        }
+
+        .lums-img {
+            margin-left: 20%;
+            margin-top: 1vh;
+        }
+
+        .tayyaba-img h2 {
+            font-size: 20px;
+        }
+
+        .tayyaba-img h2,
+        p {
+            text-align: center;
+        }
+
+        #btn3 {
+            background-color: orange;
+            padding: 10px 30px;
+            margin-left: 25%;
+            margin-top: 20vh;
+            transition: all 0.5s ease-in-out;
+        }
+
+        #btn3:hover {
+            text-decoration: underline white;
+        }
+
+        .tayyaba-vid {
+            margin-left: 4%;
+        }
+
+        .lums-vid {
+            height: 80vh;
+            width: 50vw;
+        }
+
+        .news {
+            margin-top: 14vh;
+        }
+        .news h1 {
+            margin-left: 5%;
+        }
+       
+
+        @media (max-width:1232px) {
+            .welcome-right button {
+            height: 11vh;
+        }
+        @media (max-width:1126px) {
+            .welcome-left p {
+                font-size: 17px;
+            }
+        }
+        @media (max-width:1018px) {
+            .welcome-left p {
+                font-size: 15px;
+            }
+            .welcome-left {
+                margin-left: 8%;
+            }
+            .welcome-right {
+                margin-left: 12%;
+            }
+        }
+        }
+        @media (max-width:890px) {
+            .welcome-left {
+                margin-left: 6%;
+            }
+            .welcome-right {
+                margin-left: 10%;
+            }
+        }
+        @media (max-width:850px) {
+            .welcome-left {
+            text-align: center;
+        }
+            .welcome-left p {
+                line-height: 8vh;
+                text-align: center;
+            }
+            .welcome-right {
+            text-align: center;
+        }
+            .welcome-right button {
+            height: 12vh;
+        }
+            .fl-welcome {
+                flex-direction: column;
+            }
+            .fl-tayyaba {
+            flex-direction: column;
+        }
+        .lums-img {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        #btn2 {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        .tayyaba-vid {
+            text-align: center;
+            margin-top: 5vh;
+        }
+        .news p {
+            font-size: 14px;
+        }
+        }
+        @media (max-width:768px) {
+            .news p {
+            font-size: 12px;
+        }
+        }
+        @media (max-width:665px) {
+            .experience p {
+                font-size: 15px;
+            }
+        }
+        @media (max-width:500px) {
+            .experience p {
+                font-size: 12px;
+            }
+        }
+        @media (max-width:435px) {
+            .welcome-left p {
+                font-size: 12.5px;
+            }
+        }
+
+
+
+
+        #news-btn {
+            margin-top: 15vh;
+            margin-bottom: -11vh;
+            margin-left: 3%;
+        }
+
+        .news-link {
+            color: black;
+            text-decoration: none;
+        }
+
+        #news-btn:hover {
+            background-color: darkblue;
+        }
+
+        .news-link:hover {
+            color: white;
+        }
+
+        .fl-news1 {
+            margin-top: 13vh;
+            margin-left: 3%;
+            display: flex;
+        }
+
+        .news-img1 {
+            width: 33%;
+            box-shadow: 3px 3px 3px 3px whitesmoke;
+        }
+
+        .news-img2 {
+            width: 33%;
+            margin-left: 1%;
+            box-shadow: 3px 3px 3px 3px whitesmoke;
+        }
+
+        .news-img1 h6 {
+            margin-top: 4vh;
+            margin-left: 2%;
+        }
+
+        .news-img1 a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .news-img1 a:hover {
+            color: skyblue;
+            text-decoration: underline;
+        }
+
+        .news-img2 h6 {
+            margin-top: 4vh;
+            margin-left: 2%;
+            margin-bottom: 7vh;
+        }
+
+        .news-img2 a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .news-img2 a:hover {
+            color: skyblue;
+            text-decoration: underline;
+        }
+
+        .fl-news2 {
+            margin-top: 2vh;
+            margin-left: 3%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .news-img4 {
+            width: 33%;
+            margin-left: 1%;
+            box-shadow: 3px 3px 3px 3px whitesmoke;
+            height: 55vh;
+        }
+
+        .news-img4 h6 {
+            margin-top: 4vh;
+            margin-left: 2%;
+        }
+
+        .news-img4 a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .news-img4 a:hover {
+            color: skyblue;
+            text-decoration: underline;
+        }
+
+        .news-img3 {
+            width: 33%;
+            box-shadow: 3px 3px 3px 3px whitesmoke;
+            height: 55vh;
+        }
+
+        .news-img3 h6 {
+            margin-top: 4vh;
+            margin-left: 2%;
+            margin-bottom: 2vh;
+        }
+
+        .news-img3 a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .news-img3 a:hover {
+            color: skyblue;
+            text-decoration: underline;
+        }
+
+        .news-events {
+            margin-top: -55vh;
+            margin-left: 1.5%;
+            width: 29%;
+        }
+
+        #event-btn {
+            margin-bottom: 2vh;
+        }
+
+        .event-link {
+            color: black;
+            text-decoration: none;
+        }
+
+        #event-btn:hover {
+            background-color: darkblue;
+        }
+
+        .event-link:hover {
+            color: white;
+        }
+
+        .event1 {
+            display: flex;
+            text-align: center;
+            align-items: center;
+        }
+
+        .event2,
+        .event3,
+        .event4,
+        .event5 {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            margin-top: 2.5vh;
+        }
+
+        .date {
+            width: 45%;
+            height: 25vh;
+            background-color: whitesmoke;
+        }
+
+        .date p {
+            margin-top: 32%;
+            text-align: center;
+        }
+
+        .date:hover {
+            color: skyblue;
+        }
+
+        .date p:nth-of-type(2) {
+            font-size: 40px;
+            font-weight: 800;
+            margin-top: -5vh;
+        }
+
+        .explain {
+            padding: 38px 0;
+            box-shadow: 1px 1px 1px 1px whitesmoke;
+        }
+
+        .explain a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .explain a:hover {
+            color: skyblue;
+            text-decoration: underline;
+        }
+
+        @media (max-width:1300px) {
+            .news-events {
+                margin-top: -82.4vh;
+            }
+
+            .news-img3 {
+                height: 67.4vh;
+            }
+
+            .news-img4 {
+                height: 67.4vh;
+            }
+
+            .date {
+                width: 45%;
+                height: 25vh;
+            }
+        }
+
+        @media (max-width:1440px) {
+            .news-events {
+                margin-top: -80.5vh;
+            }
+
+            .date {
+                height: 24vh;
+            }
+
+            .news-img3 {
+                height: 62.8vh;
+            }
+
+            .news-img4 {
+                height: 62.8vh;
+            }
+
+            .explain {
+                padding: 41px 0;
+            }
+        }
+
+        @media (max-width:1024px) {
+            .news-events {
+                margin-top: -81.4vh;
+            }
+
+            .explain {
+                padding: 20px 0;
+            }
+
+            .date {
+                width: 65%;
+            }
+
+            .event2,
+            .event3,
+            .event4,
+            .event5 {
+                margin-top: 2.28vh;
+            }
+
+            .fl-news2 {
+                margin-top: 4vh;
+            }
+        }
+
+        @media (max-width:850px) {
+            #news-btn {
+                margin-left: 1%;
+            }
+
+            .fl-news1 {
+                margin-left: 1%;
+            }
+
+            .fl-news2 {
+                margin-left: 1%;
+            }
+
+            .news-events {
+                margin-top: -74.85vh;
+                width: 31%;
+            }
+
+            .event2,
+            .event3,
+            .event4,
+            .event5 {
+                margin-top: 2vh;
+            }
+
+            .date {
+                height: 23.05svh;
+            }
+
+            .explain {
+                padding: 18px 0;
+            }
+        }
+
+        @media (max-width:768px) {
+            .news-img1 {
+                margin-left: 1%;
+                width: 48%;
+            }
+
+            .news-img2 {
+                width: 48%;
+            }
+
+            .news-img3 {
+                margin-left: 1%;
+                width: 48%;
+            }
+
+            .news-img4 {
+                width: 48%;
+            }
+
+            .news-events {
+                margin-top: 8vh;
+                margin-left: 10%;
+                width: 80%;
+            }
+
+            .date {
+                width: 17%;
+                height: 25vh;
+            }
+
+            .date p {
+                margin-top: 25%;
+            }
+
+            .explain {
+                padding: 46px 5px;
+            }
+        }
+
+        @media (max-width:540px) {
+
+            .fl-news1,
+            .fl-news2 {
+                flex-direction: column;
+            }
+
+            .news-img1,
+            .news-img3 {
+                width: 97%;
+            }
+
+            .news-img2,
+            .news-img4 {
+                margin-top: 4.3vh;
+                width: 97%;
+            }
+
+            .date {
+                width: 40%;
+                height: 20vh;
+            }
+
+            .date p {
+                margin-top: 37%;
+            }
+
+            .news-events {
+                margin-top: 7vh;
+            }
+
+            .date p:nth-of-type(2) {
+                font-size: 35px;
+                font-weight: 700;
+                margin-top: -4vh;
+            }
+        }
+
+        @media (max-width:430px) {
+
+            .news-img3,
+            .news-img4 {
+                height: 70vh;
+            }
+            .news-img4 {
+                margin-top: 4vh;
+            }
+
+            .news-events {
+                margin-top: 11vh;
+            }
+            .date {
+                width: 56%;
+                height: 25vh;
+            }
+
+            .date p {
+                margin-top: 23%;
+            }
+
+            .date p:nth-of-type(2) {
+                margin-top: -3vh;
+            }
+
+            .explain {
+                padding: 23px 5px;
+            }
+        }
+
+        @media (max-width:375px) {
+            .date {
+                width: 60%;
+                height: 30vh;
+            }
+
+            .date p {
+                margin-top: 43%;
+            }
+
+            .date p:nth-of-type(2) {
+                margin-top: -10vh;
+            }
+
+            .explain {
+                padding: 5px 1px;
+            }
+        }
+
+        @media (max-width:360px) {
+            .date {
+                width: 60%;
+                height: 15vh;
+            }
+
+            .date p {
+                margin-top: 33%;
+            }
+
+            .date p:nth-of-type(2) {
+                margin-top: -4vh;
+            }
+
+            .explain {
+                padding: 18px 1px;
+            }
+        }
+        @media (max-width:320px) {
+            .date {
+                height: 23vh;
+            }
+        }
+        /* Footer_Below */
+        footer {
+            position: relative;
+        }
+        .footer1 {
+            margin-top: 10vh;
+            display: flex;
+            width: 100%;
+          
+            background-color: #002581;
+            padding-bottom: 5vh;
+            padding-top: 5vh;
+        }
+        .ft-div1 {
+            margin-left: 13px;
+        }
+        .ft-div1 img {
+            width: 200px;
+            height: 20vh;
+        }
+        .ft-div2, .ft-div3, .ft-div4 {
+            margin-left: 137px;
+            margin-top: 2vh;
+        }
+        .ft-img2 {
+            position: absolute;
+            right: 10px;
+            bottom: 77vh;
+        }
+        .ft-ul1 {
+            list-style-type: none;
+        }
+        .ft-ul1 a {
+            color: white;
+            text-decoration: none;
+            font-size: 11px;
+        }
+        .ft-ul1 a:hover {
+            color: skyblue;
+        }
+        .footer2 {
+            display: flex;
+            width: 100%;
+            background-color: #00064b ;
+            padding-bottom: 5vh;
+            padding-top: 5vh;
+        }
+        .ft-div6 {
+            margin-left: 17px;
+            color: white;
+        }
+        .icons {
+            margin-left: 180px;
+            display: flex;
+        }
+        .footer2 i {
+            margin-top: 9vh;
+            color: white;
+            font-size: 40px;
+            margin-right: 40px;
+        }
+      button{
+            background-color: blue;
+            color: white;
+          position: absolute;
+            left: 80%;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 15px;
+            padding-bottom: 20px;
+            border: none;
+            text-align: center;
+            border-radius: 10px;
+            bottom: 30%;
+        
+            
+        }
+        .footer2 a:hover {
+            color: white;
+            background-color: #002581;
+            opacity: 1;
+        }
+
+        @media (max-width:1272px) {
+            .ft-div2 {
+                margin-left: 100px;
+            }
+            .ft-div3, .ft-div4 {
+                margin-left: 60px;
+            }
+        }
+        @media (max-width:1110px) {
+            .ft-div2 {
+                margin-left: 50px;
+            }
+             .ft-div3, .ft-div4 {
+            margin-left: 15px;
+        }
+        }
+        @media (max-width:950px) {
+            .ft-div2, .ft-div3, .ft-div4 {
+                margin-top: 7.5vh;
+        }
+        .ft-div2 {
+            margin-left: 0;
+        }
+        .ft-div3, .ft-div4 {
+            margin-left: 0;
+        }
+        }
+        @media (max-width:862px) {   
+            .ft-div2, .ft-div3, .ft-div4 {
+                margin-top: 25vh;
+        }
+        
+        .ft-div2 {
+            margin-left: -210px;
+        }
+    }
+        @media (max-width:675px) {
+            .ft-div4 {
+                margin-top: 50vh;
+                margin-left: -225px;
+            }
+        }
+        @media (max-width:966px) {
+            .footer2 {
+                height: 80vh;
+            }
+            .icons {
+            text-align: center;
+            display: flex;
+            margin-top: 20%; 
+        }
+        .ft-div6 {
+       position: absolute;
+            left: 37%;
+            color: white;
+        }
+        button{
+          position: absolute;
+            left: 41%;
+            bottom: -25%;  
+        }
+        .icons {
+            margin-left: 28%;
+            display: flex;
+            margin-top: 15%; 
+        }
+        }
+        @media (max-width:665px) {
+            button{
+          position: absolute;
+            left: 43%;
+            bottom: -60%;
+        }
+        }
+        @media (max-width:550px) {
+            .ft-div6 {
+                left: 29%;
+            }
+            button{
+          position: absolute;
+            left: 38%;
+            bottom: -60%;
+        }
+            .icons {
+            margin-left: 19%;
+            display: flex;
+            margin-top: 20%; 
+            font-size: 30px;
+        }
+        
+        }
+        @media (max-width:490px) {
+            .icons {
+                margin-left: 11%;
+            }
+        }
+        @media (max-width:490px) {
+            .footer1, .footer2 {
+                width: 135%;
+            }
+            .icons {
+                margin-left: 14%;
+                width: 100%;
+                margin-top: 25%;
+            }
+            .footer2 i {
+                font-size: 30px;
+            }
+            .ft-img2 {
+                left: 100%;
+       }
+        }
+
+        @media (max-width:320px) {
+            
+            .icons {
+            margin-left: 20%;
+            display: flex;
+            margin-top: 23%; 
+        }
+        }
+
+
+        
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <label for="click"><i class="fa-solid fa-bars icon"></i></label>
+        <input  type="checkbox" name="click" id="click">
+        <ul>
+            <li><a href="lums header.html">HOME</a></li>
+            <li><a href="addmission_form.html" target="_blank">APPLY</a></li>
+            <li><a href="lums news.html" target="_blank">NEWS</a></li>
+            <li><a href="lums sign up.html" target="_blank">Sign In</a></li>
+            <li><a href="">CONTACT</a></li>
+        </ul>
+    </nav>
+    
+    <div class="bar-div">
+        <img src="https://lums.edu.pk/sites/default/files/inline-images/LUMS%20Logo.png" alt="logo">
+        <img style="display: block;" src="https://lums.edu.pk/sites/default/files/inline-images/lums_slogan6.png"
+            alt="logo2">
+    </div>
+
+    <div class="dropdown">
+        <button type="button" id="btn1" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Menu</button>
+
+
+        <div class="dropdown-menu" id="fl-menu">
+
+            <div class="menu-div">
+                <a href="" class="dropdown-item">
+                    <p class="menu-home">Home</p>
+                </a>
+                <h6 class="dropdown-item">Admissions</h6>
+                <hr class="dropdown-divider">
+                </hr>
+                <a href="">
+                    <p class="dropdown-item">Programme Finder</p>
+                </a>
+                <a href="">
+                    <p class="dropdown-item">Admissions Home</p>
+                </a>
+                <a href="">
+                    <p class="dropdown-item">Undergraduate Programmes</p>
+                </a>
+                <a href="">
+                    <p class="dropdown-item">Graduate Programmes</p>
+                </a>
+                <a href="">
+                    <p class="dropdown-item">Financial Aid and Scholarships</p>
+                </a>
+                <a href="">
+                    <p class="dropdown-item">National Outreach <br> Programme</p>
+                </a>
+                <a href="">
+                    <p class="dropdown-item">International Students</p>
+                </a>
+                <a href="">
+                    <p class="dropdown-item">Apply Now</p>
+                </a>
+            </div>
+            <div class="menu-div2">
+                <h6 class="dropdown-item">Acadamics</h6>
+                <hr class="dropdown-divider">
+                </hr>
+                <a href="">
+                    <p class="dropdown-item">Suleman Dawood School of <br> Business</p>
+                </a>
+                <a href="">
+                    <p class="dropdown-item">Mushtaq Ahmad Gurmani <br> School of Humanities and <br> Social Sciences
+                    </p>
+                </a>
+                <a href="">
+                    <p class="dropdown-item">Syed Babar Ali School of <br> Science and Engineering</p>
+                </a>
+                <a href="">
+                    <p class="dropdown-item">Shaikh Ahmad Hassan School <br> of Law</p>
+                </a>
+                <a href="">
+                    <p class="dropdown-item">Syed Ahsan Ali and Syed <br> Maratib Ali School of <br> Education</p>
+                </a>
+                <a href="">
+                    <p class="dropdown-item">Executive Education</p>
+                </a>
+                <a href="">
+                    <p class="dropdown-item">Continuing Education</p>
+                </a>
+                <a href="">
+                    <p class="dropdown-item">Learning Institute</p>
+                </a>
+            </div>
+            <div class="menu-div3">
+                <h6 class="dropdown-item">Faculty & Research</h6>
+                <hr class="dropdown-divider">
+                </hr>
+                <a href="">
+                    <p class="dropdown-item">Faculty Profiles</p>
+                </a>
+                <a href="">
+                    <p class="dropdown-item">Research and Innovation</p>
+                </a>
+                <a href="">
+                    <p class="dropdown-item">Centers</p>
+                </a>
+            </div>
+            <div class="menu-div4">
+                <h6 class="dropdown-item">Donors</h6>
+                <hr class="dropdown-divider">
+                </hr>
+                <a href="">
+                    <p class="dropdown-item">Giving to LUMS</p>
+                </a>
+                <a href="">
+                    <p class="dropdown-item">Give a day to LUMS Campaign</p>
+                </a>
+                <a href="">
+                    <p class="dropdown-item">LUMS Supporters</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div id="slidingimg" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#slidingimg" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="slide 1"></button>
+            <button type="button" data-bs-target="#slidingimg" data-bs-slide-to="1" aria-label="slide 2"></button>
+            <button type="button" data-bs-target="#slidingimg" data-bs-slide-to="2" aria-label="slide 3"></button>
+            <button type="button" data-bs-target="#slidingimg" data-bs-slide-to="3" aria-label="slide 4"></button>
+            <button type="button" data-bs-target="#slidingimg" data-bs-slide-to="4" aria-label="slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="https://lums.edu.pk/sites/default/files/2024-04/banners-LKSA_0.webp"
+                    alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Preserving the Literary, Cultural, Musical and Intellectual Heritage of Pakistan</h1>
+                    <p>LUMS aquires Lutfullah Khan Sound Archieve</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="https://lums.edu.pk/sites/default/files/2024-02/GADTL%20Slider.jpg"
+                    alt="">
+                <div class="carousel-caption d-none d-md-block">
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100"
+                    src="https://lums.edu.pk/sites/default/files/2024-04/Homepage%20banner%20Haider.jpg" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>A First for Pakistan and a First for LUMS</h1>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="https://lums.edu.pk/sites/default/files/2024-04/WorldFestival.jpg"
+                    alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Meet the 'Heroes' of the World Youth Festival!</h1>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="https://lums.edu.pk/sites/default/files/2024-03/banner_dean_soe.jpg"
+                    alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Dr.Tayyaba Tamim Appointed as Dean, SEO</h1>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#slidingimg" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#slidingimg" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <flexbox class="fl-welcome">
+        <div class="welcome-left">
+            <h1>Welcome to LUMS</h1>
+            <p>LUMS is an extraordinary place for learning, discovery and <br> transformation. Here, you have the
+                freedom to ask questions, <br> challenge the ordinary and spark innovation. We seek out <br> bright and
+                curious minds with revolutionary ideas to create an <br> empowering community of leaders and change
+                makers.</p>
+        </div>
+        <div class="welcome-right">
+            <div class="dropdown">
+                <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown">Future
+                    Students</button>
+                <div class="dropdown-menu">
+                    <p class="dropdown-item">Why chose LUMS?</p>
+                    <p class="dropdown-item">Undergraduate Programmes</p>
+                    <p class="dropdown-item">Graduate Programmes</p>
+                    <p class="dropdown-item">FAQs</p>
+                    <p class="dropdown-item">Visit the Campus</p>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown">Current
+                    students</button>
+                <div class="dropdown-menu">
+                    <p class="dropdown-item">Acadamic Calendar</p>
+                    <p class="dropdown-item">Student Login</p>
+                    <p class="dropdown-item">Student Socities</p>
+                    <p class="dropdown-item">Office of Student Affairs</p>
+                    <p class="dropdown-item">Student Noticeboard</p>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown">Faculty</button>
+                <div class="dropdown-menu">
+                    <p class="dropdown-item">Faculty Profiles</p>
+                    <p class="dropdown-item">Reaserch and Innovation</p>
+                    <p class="dropdown-item">Centers</p>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown">Alumni</button>
+                <div class="dropdown-menu">
+                    <p class="dropdown-item">Alumni Relations</p>
+                    <p class="dropdown-item">VC AAA Awards</p>
+                    <p class="dropdown-item">Alumni Benefits</p>
+                    <p class="dropdown-item">Alumni Policies</p>
+                    <p class="dropdown-item">Alumni Portal</p>
+                    <p class="dropdown-item">Alumni Annual</p>
+                </div>
+                <div class="dropdown">
+                    <button type="button" class="btn btn-light dropdown-toggle"
+                        data-bs-toggle="dropdown">Donors</button>
+                    <div class="dropdown-menu">
+                        <p class="dropdown-item">Donate Now</p>
+                        <p class="dropdown-item">Giving to LUMS</p>
+                        <p class="dropdown-item">LUMS Supporters</p>
+                        <p class="dropdown-item">Nigehbaan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </flexbox>
+
+    <div class="experience text-center">
+        <h1>An Extraordinary Experience</h1>
+        <p>Our transdisciplinary approach gives students the extraordinary freedom to <br> explore different disciplines
+            across our five schools and discover endless <br> opportunities for success.</p>
+    </div>
+    <flexbox class="fl-tayyaba">
+        <div class="tayyaba-img">
+            <h2 style="text-align: center;">Syed Ahsan Ali and Syed Maratib Ali <br> School of Education</h2>
+            <img class="lums-img"
+                src="https://lums.edu.pk/sites/default/files/styles/195x195/public/2024-03/DEAN-SOE_3.jpg"
+                alt="tayyaba">
+            <h2 class="mt-3">Dr. Tayyaba Tamim</h2>
+            <p>The School aims to produce a new class of <br> leaders as educators, entrepreneurs, <br> policymakers,
+                researchers and reflective <br> practitioners.</p>
+            <button id="btn3">Learn More</button>
+        </div>
+        <div class="tayyaba-vid">
+            <video src="https://lums.edu.pk/sites/default/files/2022-09/Sahsol.mp4" controls autoplay loop muted
+                class="lums-vid"></video>
+        </div>
+    </flexbox>
+    <div class="news text-center">
+        <h1>News & Events</h1>
+        <p>Whether our students and faculty are producing groundbreaking research, or solving the world’s biggest
+            challenges, there is <br> always something exciting happening at LUMS!</p>
+    </div>
+
+    <!-- news&events -->
+    <a href="lums news.html" target="_blank" class="news-link"><button class="btn" id="news-btn">
+        <h1>News</h1>
+    </button></a>
+<div class="fl-news1">
+    <div class="news-img1">
+        <img style="width: 100%;"
+            src="https://www.lums.edu.pk/sites/default/files/styles/recent_news_landing_news/public/2024-04/M-LuthfullahKhan-slider2_3.jpg?h=61277e25"
+            alt="news-img1">
+        <a href="">
+            <h6>LUMS to House the Extraordinary ‘Lutfullah Khan Sound Archive’</h6>
+        </a>
+    </div>
+    <div class="news-img2">
+        <img style="width: 100%;"
+            src="https://www.lums.edu.pk/sites/default/files/styles/recent_news_landing_news/public/2024-04/Bannera-1920-by-600z_2.png?h=7269ac66"
+            alt="news-img2">
+        <a href="">
+            <h6>LUMS Delegation Engages with Pak-UK Business Council to Strengthen Academia-Industry Collaboration
+            </h6>
+        </a>
+    </div>
+</div>
+<div class="fl-news2">
+    <div class="news-img3">
+        <img style="width: 100%;"
+            src="https://www.lums.edu.pk/sites/default/files/styles/recent_news_landing_news/public/2024-04/world-festival_2.jpg?h=a3cc7dc9"
+            alt="news-img3">
+        <a href="">
+            <h6>LUMS Delegation Engages with Pak-UK Business Council to Strengthen Academia-Industry Collaboration
+            </h6>
+        </a>
+    </div>
+    <div class="news-img4">
+        <img style="width: 100%;"
+            src="https://www.lums.edu.pk/sites/default/files/styles/recent_news_landing_news/public/2024-04/Bannera-1920-by-600-FPCCI_2.png?h=b6b90588"
+            alt="news-img4">
+        <a href="">
+            <h6>Meet the 'Heroes': Students Win Top Awards at World Youth Festival in Russia</h6>
+        </a>
+    </div>
+    <div class="news-events">
+        <a href="lums events.html" target="_blank" class="event-link"><button class="btn" id="event-btn">
+                <h1>Events</h1>
+            </button></a>
+        <div class="event1">
+            <span class="date">
+                <p>May</p>
+                <p>13</p>
+            </span>
+            <span class="explain">
+                <a href="">Public Defence of PhD Management Dissertation - Abdullah Khan</a>
+            </span>
+        </div>
+        <div class="event2">
+            <span class="date">
+                <p>May</p>
+                <p>13</p>
+            </span>
+            <span class="explain">
+                <a href="">Public Defence of PhD Management Dissertation - Abdullah Khan</a>
+            </span>
+        </div>
+        <div class="event3">
+            <span class="date">
+                <p>May</p>
+                <p>13</p>
+            </span>
+            <span class="explain">
+                <a href="">Public Defence of PhD Management Dissertation - Abdullah Khan</a>
+            </span>
+        </div>
+        <div class="event4">
+            <span class="date">
+                <p>May</p>
+                <p>13</p>
+            </span>
+            <span class="explain">
+                <a href="">Public Defence of PhD Management Dissertation - Abdullah Khan</a>
+            </span>
+        </div>
+        <div class="event5">
+            <span class="date">
+                <p>May</p>
+                <p>13</p>
+            </span>
+            <span class="explain">
+                <a href="">Public Defence of PhD Management Dissertation - Abdullah Khan</a>
+            </span>
+        </div>
+    </div>
+</div>
+<!-- Footer_Below -->
+<footer>
+    <flexbox class="footer1">
+        <div class="ft-div1">
+            <img class="ft-img" src="https://lums.edu.pk/sites/default/files/inline-images/LUMS%20Logo-white.png" alt="ft-img1">
+        </div>
+        <div class="ft-div2">
+            <ul class="ft-ul1">
+                <li><a href="#">Student Affairs</a></li>
+                <li><a href="#">Acadamic Calendar</a></li>
+                <li><a href="#">Libarary</a></li>
+                <li><a href="#">Pay Online</a></li>
+            </ul>
+        </div>
+        <div class="ft-div3">
+            <ul class="ft-ul1">
+                <li><a href="#">Financial Statement</a></li>
+                <li><a href="#">Phone Directory</a></li>
+                <li><a href="#">Emergency Service</a></li>
+                <li><a href="#">Campus Mail</a></li>
+            </ul>
+        </div>
+        <div class="ft-div4">
+            <ul class="ft-ul1">
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Directions To LUMS
+                </a></li>
+                <li><a href="#">Career</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+               
+            </ul>
+        </div>
+    </flexbox>
+        <img class="ft-img2" src="https://lums.edu.pk/themes/contrib/lums/images/talk.png" alt="ft-img2">
+    <flexbox class="footer2">
+        <div class="ft-div6">
+        <p>  DHA, Lahore Cantt. <br>54792, <br>    
+            Lahore, Pakistan <br><br>
+            Phone: +92 42 3560 8000</p>  
+        </div>
+        <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+        <i class="fa-brands fa-square-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+        </div>
+       
+    </flexbox>
+    <button>Sign Up</button>
+    </footer>
+</body>
+
+</html>
