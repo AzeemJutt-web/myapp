@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LUMS_News</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .section {
+            background-color: whitesmoke;
+            width: 100%;
+        }
+
+        #card1{
+            background-color: white;
+            box-shadow: 1px 1px 0.5px 0.5px whitesmoke;
+            width: 88%;
+        }
+
+        .card-img1 {
+            width: 96%;
+        }
+        .card-title {
+            margin-top: 3vh;
+            margin-bottom: 1vh;
+            margin-left: 2%;
+        }
+        .card-body {
+            margin-top: 2vh;
+        }
+        .news-link {
+            color: black;
+            text-decoration: none;
+        }
+        .news-link:hover {
+            text-decoration: underline;
+            color: blue;
+        }
+        .news-1sth2 {
+            margin-top: 1vh;
+            margin-left: 0.3%;
+        }
+        #card1 time {
+            margin-left: 0.4%;
+        }
+        .news-p1 {
+            margin-top: 1vh;
+            margin-left: 0.4%;
+        }
+        .news-link1 {
+            margin-top: 12vh;
+        }
+        .news-link2 {
+            margin-top: 1vh;
+        }
+        .news-link3 {
+            margin-top: 4.6vh;
+        }
+        .news-link4 {
+            margin-top: 4.6vh;
+        }
+        .news-link1:hover, .news-link2:hover, .news-link3:hover, .news-link4:hover, .news-link5:hover, .news-link6:hover, .news-link7:hover, .news-link8:hover, .news-link9:hover, .news-link10:hover, .news-link11:hover, .news-link12:hover, .news-link13:hover, .news-link14:hover, .news-link15:hover, .news-link16:hover, .news-link17:hover, .news-link18:hover, .news-link19:hover, .news-link20:hover, .news-link21:hover, .news-link22:hover, .news-link23:hover, .news-link24:hover, .news-link25:hover, .news-link26:hover, .news-link27:hover, .news-link28:hover, .news-link29:hover, .news-link30:hover, .news-link31:hover, .news-link32:hover {
+            background-color: darkblue;
+            color: white;
+        }
+        .news-heading {
+            margin-top: 12vh;
+        }
+        .fl-news1 {
+            margin-top: 3vh;
+            display: flex;
+            width: 100%;
+        }
+        #card2 {
+            background-color: white;
+            box-shadow: 1px 1px 0.5px 0.5px whitesmoke;
+            width: 270px;
+            height: 70vh;
+        }
+
+        .card-img2 {
+            width: 100%;
+        }
+        #card3, #card4, #card5 {
+            margin-left: 3%;
+            background-color: white;
+            box-shadow: 1px 1px 1px 1px whitesmoke;
+            width: 270px;
+            height: 70vh;
+        }
+        .news-2h2 {
+            margin-top: 2vh;
+            font-size: 18px;
+        }
+        .news-link {
+            color: black;
+            text-decoration: none;
+        }
+        .news-link:hover {
+            text-decoration: underline;
+            color: blue;
+        }
+        .fl-news2 {
+            display: flex;
+            width: 100%;
+            margin-top: 4vh;
+        }
+        .news-link5 {
+            margin-top: 12vh;
+        }
+        .news-link6, .news-link7 {
+            margin-top: 1vh;
+        }
+        .news-link8 {
+            margin-top: 8.3vh;
+        }
+        .fl-news3 {
+            display: flex;
+            width: 100%;
+            margin-top: 4vh;
+        }
+        .news-link9 {
+            margin-top: 1vh;
+        }
+        .news-link10 {
+            margin-top: 8.3vh;
+        }
+        .news-link11 {
+            margin-top: 4.7vh;
+        }
+        .news-link12 {
+            margin-top: 8.3vh;
+        }
+        .fl-news4 {
+            display: flex;
+            width: 100%;
+            margin-top: 4vh;
+        }
+        .news-link13 {
+            margin-top: 8.3vh;
+        }
+        .news-link14 {
+            margin-top: 1vh;
+        }
+        .news-link15 {
+            margin-top: 8.3vh;
+        }
+        .news-link16 {
+            margin-top: 1vh;
+        }
+        .fl-news5 {
+            display: flex;
+            width: 100%;
+            margin-top: 4vh;
+        }
+        .news-link17, .news-link18, .news-link19, .news-link20 {
+            margin-top: 4.7vh;
+        }
+        .fl-news6 {
+            display: flex;
+            width: 100%;
+            margin-top: 4vh;
+        }
+        .news-link21 {
+            margin-top: 1vh;
+        } .news-link22, .news-link24 {
+            margin-top: 4.5vh;
+        }
+        .news-link23 {
+            margin-top: 12vh;
+        }
+        .fl-news7 {
+            display: flex;
+            width: 100%;
+            margin-top: 4vh;
+        }
+        .news-link25, .news-link26 {
+            margin-top: 4.7vh;
+        }
+        .news-link27, .news-link28 {
+            margin-top: 1vh;
+        }
+        .fl-news8 {
+            display: flex;
+            width: 100%;
+            margin-top: 4vh;
+        }
+        .news-link29, .news-link30 {
+            margin-top: 4.7vh;
+        }
+        .news-link31 {
+            margin-top: 8.5vh;
+        }
+        .news-link32 {
+            margin-top: 1.1vh;
+        }
+
+        @media (max-width:1024px) {
+            .news-2h2 {
+                font-size: 13px;
+            }
+            .news-link1 {
+            margin-top: 9vh;
+        }
+        .news-link2 {
+            margin-top: -0.5vh;
+        }
+        .news-link3 {
+            margin-top: 2.8vh;
+        }
+        .news-link4 {
+            margin-top: 6vh;
+        }
+        .news-link5 {
+            margin-top: 9vh;
+        }
+        .news-link6, .news-link7, .news-link8 {
+            margin-top: 6vh;
+        }
+        .news-link9 {
+            margin-top: -0.5vh;
+        }
+        .news-link10, .news-link11, .news-link12 {
+            margin-top: 6vh;
+        }
+        .news-link13 {
+            margin-top: 6.3vh;
+        }
+        .news-link14 {
+            margin-top: 3vh;
+        }
+        .news-link15 {
+            margin-top: 9.3vh;
+        }
+        .news-link16{
+            margin-top: 0vh;
+        }
+        .news-link17, .news-link19 {
+            margin-top: 2.5vh;
+        }
+        .news-link18, .news-link20 {
+            margin-top: 5.7vh;
+        }
+        .news-link21, .news-link22, .news-link24 {
+            margin-top: 2.6vh;
+        }
+        .news-link23 {
+            margin-top: 12.3vh;
+        } 
+        .news-link25 {
+            margin-top: 5.75vh;
+        } 
+        .news-link26, .news-link28 {
+            margin-top: 2.6vh;
+        } 
+        .news-link27 {
+            margin-top: -0.5vh;
+        } 
+        .news-link29, .news-link30, .news-link32 {
+            margin-top: 2.4vh;
+        } 
+        .news-link23 {
+            margin-top: 12.3vh;
+        } 
+        }
+        @media (max-width:768px) {
+            
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+        .nav a:hover {
+            color: skyblue;
+        }
+        .menu-div {
+            float: left;
+        }
+
+        .menu-div2 {
+            float: left;
+        }
+
+        .menu-div3 {
+            float: left;
+        }
+
+        .menu-div4 {
+            float: left;
+        }
+
+        .menu-div2,
+        .menu-div3,
+        .menu-div4 {
+            margin-top: 8.1vh;
+        }
+
+        .menu-div a {
+            text-decoration: none;
+        }
+
+        .menu-div2 a {
+            text-decoration: none;
+        }
+        .menu-div3 a {
+            text-decoration: none;
+        }
+        .menu-div4 a {
+            text-decoration: none;
+        }
+        .menu-div p:hover {
+            color: blue;
+        }
+        .menu-div2 p:hover {
+            color: blue;
+        }
+        .menu-div3 p:hover {
+            color: blue;
+        }
+        .menu-div4 p:hover {
+            color: blue;
+        }
+
+      
+        .nav{
+            width: 100%;
+            height: 15vh;
+            font-weight: bolder;
+            color: white;
+            background-color: blue;
+        }
+        .nav ul{
+            list-style-type: none;
+            display: flex;
+            position: absolute;
+            right: 2%;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+        }
+        #click:checked ~ ul{
+            left: 0%;
+            transition: 1s;
+        }
+        #click{
+            display: none;
+        }
+        #click:checked ~ label i:before{
+            content: '\f00d';
+        }
+        .nav ul>li{
+            padding: 30px;
+        }
+        label>.icon{
+            position: absolute;
+            right: 1%;
+            font-size: 30px;
+            margin-top: 5%;
+            display: none;
+          
+        } 
+       .dropdown #btn1{
+        margin-left: 80%;
+        margin-top: -5%;
+       }
+        @media (min-width:603px) {
+            .nav ul{
+            list-style-type: none;
+            display: flex;
+            position: absolute;
+            
+            z-index: 3000;
+        }
+        } 
+        
+        @media (max-width:603px) {
+            label>.icon{
+            color: white;
+            display: block;
+            right: 5%;
+        } 
+        .dropdown #btn1{
+       
+        margin-top: -10%;
+       }
+            .nav ul{
+            top: 15vh;
+            background-color:blue;
+            display: block;
+            text-align: center;
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            z-index: 300;
+            left: -100%;
+        }
+}
+/* Footer_Styling */
+.footer1 {
+            margin-top: 10vh;
+            display: flex;
+            width: 100%;
+          
+            background-color: #002581;
+            padding-bottom: 5vh;
+            padding-top: 5vh;
+        }
+        .ft-div1 {
+            margin-left: 13px;
+        }
+        .ft-div1 img {
+            width: 200px;
+            height: 20vh;
+        }
+        .ft-div2, .ft-div3, .ft-div4 {
+            margin-left: 137px;
+            margin-top: 2vh;
+        }
+        .ft-img2 {
+            position: absolute;
+            right: 10px;
+            bottom: 77vh;
+        }
+        .ft-ul1 {
+            list-style-type: none;
+        }
+        .ft-ul1 a {
+            color: white;
+            text-decoration: none;
+            font-size: 11px;
+        }
+        .ft-ul1 a:hover {
+            color: skyblue;
+        }
+        .footer2 {
+            display: flex;
+            width: 100%;
+            background-color: #00064b ;
+            padding-bottom: 5vh;
+            padding-top: 5vh;
+        }
+        .ft-div6 {
+            margin-left: 17px;
+            color: white;
+        }
+        .icons {
+            margin-left: 180px;
+            display: flex;
+        }
+        .footer2 i {
+            margin-top: 9vh;
+            color: white;
+            font-size: 40px;
+            margin-right: 40px;
+        }
+      button{
+            background-color: blue;
+            color: white;
+          position: absolute;
+            left: 80%;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 15px;
+            padding-bottom: 20px;
+            border: none;
+            text-align: center;
+            border-radius: 10px;
+            bottom: 30%;
+        
+            
+        }
+        .footer2 a:hover {
+            color: white;
+            background-color: #002581;
+            opacity: 1;
+        }
+
+        @media (max-width:1272px) {
+            .ft-div2 {
+                margin-left: 100px;
+            }
+            .ft-div3, .ft-div4 {
+                margin-left: 60px;
+            }
+        }
+        @media (max-width:1110px) {
+            .ft-div2 {
+                margin-left: 50px;
+            }
+             .ft-div3, .ft-div4 {
+            margin-left: 15px;
+        }
+        }
+        @media (max-width:950px) {
+            .ft-div2, .ft-div3, .ft-div4 {
+                margin-top: 7.5vh;
+        }
+        .ft-div2 {
+            margin-left: 0;
+        }
+        .ft-div3, .ft-div4 {
+            margin-left: 0;
+        }
+        }
+        @media (max-width:862px) {   
+            .ft-div2, .ft-div3, .ft-div4 {
+                margin-top: 25vh;
+        }
+        
+        .ft-div2 {
+            margin-left: -210px;
+        }
+    }
+        @media (max-width:675px) {
+            .ft-div4 {
+                margin-top: 50vh;
+                margin-left: -225px;
+            }
+        }
+        @media (max-width:966px) {
+            .footer2 {
+                height: 80vh;
+            }
+            .icons {
+            text-align: center;
+            display: flex;
+            margin-top: 20%; 
+        }
+        .ft-div6 {
+       position: absolute;
+            left: 37%;
+            color: white;
+        }
+        button{
+          position: absolute;
+            left: 41%;
+            bottom: -25%;  
+        }
+        .icons {
+            margin-left: 28%;
+            display: flex;
+            margin-top: 15%; 
+        }
+        }
+        @media (max-width:665px) {
+            button{
+          position: absolute;
+            left: 43%;
+            bottom: -60%;
+        }
+        }
+        @media (max-width:550px) {
+            .ft-div6 {
+                left: 29%;
+            }
+            button{
+          position: absolute;
+            left: 38%;
+            bottom: -60%;
+        }
+            .icons {
+            margin-left: 19%;
+            display: flex;
+            margin-top: 20%; 
+            font-size: 30px;
+        }
+        
+        }
+        @media (max-width:490px) {
+            .icons {
+                margin-left: 11%;
+            }
+        }
+        @media (max-width:490px) {
+            .footer1, .footer2 {
+                width: 135%;
+            }
+            .icons {
+                margin-left: 14%;
+                width: 100%;
+                margin-top: 25%;
+            }
+            .footer2 i {
+                font-size: 30px;
+            }
+            .ft-img2 {
+                left: 100%;
+       }
+        }
+
+        @media (max-width:320px) {
+            
+            .icons {
+            margin-left: 20%;
+            display: flex;
+            margin-top: 23%; 
+        }
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <nav class="nav">
+        <label for="click"><i class="fa-solid fa-bars icon"></i></label>
+        <input  type="checkbox" name="click" id="click">
+        <ul>
+            <li><a href="lums header.html" target="_blank">HOME</a></li>
+            <li><a href="addmission_form.html" target="_blank">APPLY</a></li>
+            <li><a href="lums news.html">NEWS</a></li>
+            <li><a href="lums events.html" target="_blank">EVENTS</a></li>
+            <li><a href="">CONTACT</a></li>
+        </ul>
+    </nav>
+    
+    <div class="bar-div">
+        <img src="https://lums.edu.pk/sites/default/files/inline-images/LUMS%20Logo.png" alt="logo">
+        <img style="display: block;" src="https://lums.edu.pk/sites/default/files/inline-images/lums_slogan6.png"
+            alt="logo2">
+    </div>
+
+    <div class="dropdown">
+        <button type="button" id="btn1" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Menu</button>
+
+
+        <div class="dropdown-menu" id="fl-menu">
+
+            <div class="menu-div">
+                <a href="" class="dropdown-item">
+                    <p class="menu-home">Home</p>
+                </a>
+                <h6 class="dropdown-item">Admissions</h6>
+                <hr class="dropdown-divider">
+                </hr>
+                <a href="">
+                    <p class="dropdown-item">Programme Finder</p>
+                </a>
+                <a href="">
+                    <p class="dropdown-item">Admissions Home</p>
+                </a>
+                <a href="">
+                    <p class="dropdown-item">Undergraduate Programmes</p>
+                </a>
+                <a href="">
+                    <p class="dropdown-item">Graduate Programmes</p>
+                </a>
+                <a href="">
+                    <p class="dropdown-item">Financial Aid and Scholarships</p>
+                </a>
+                <a href="">
+                    <p class="dropdown-item">National Outreach <br> Programme</p>
+                </a>
+                <a href="">
+                    <p class="dropdown-item">International Students</p>
+                </a>
+                <a href="">
+                    <p class="dropdown-item">Apply Now</p>
+                </a>
+            </div>
+            <div class="menu-div2">
+                <h6 class="dropdown-item">Acadamics</h6>
+                <hr class="dropdown-divider">
+                </hr>
+                <a href="">
+                    <p class="dropdown-item">Suleman Dawood School of <br> Business</p>
+                </a>
+                <a href="">
+                    <p class="dropdown-item">Mushtaq Ahmad Gurmani <br> School of Humanities and <br> Social Sciences
+                    </p>
+                </a>
+                <a href="">
+                    <p class="dropdown-item">Syed Babar Ali School of <br> Science and Engineering</p>
+                </a>
+                <a href="">
+                    <p class="dropdown-item">Shaikh Ahmad Hassan School <br> of Law</p>
+                </a>
+                <a href="">
+                    <p class="dropdown-item">Syed Ahsan Ali and Syed <br> Maratib Ali School of <br> Education</p>
+                </a>
+                <a href="">
+                    <p class="dropdown-item">Executive Education</p>
+                </a>
+                <a href="">
+                    <p class="dropdown-item">Continuing Education</p>
+                </a>
+                <a href="">
+                    <p class="dropdown-item">Learning Institute</p>
+                </a>
+            </div>
+            <div class="menu-div3">
+                <h6 class="dropdown-item">Faculty & Research</h6>
+                <hr class="dropdown-divider">
+                </hr>
+                <a href="">
+                    <p class="dropdown-item">Faculty Profiles</p>
+                </a>
+                <a href="">
+                    <p class="dropdown-item">Research and Innovation</p>
+                </a>
+                <a href="">
+                    <p class="dropdown-item">Centers</p>
+                </a>
+            </div>
+            <div class="menu-div4">
+                <h6 class="dropdown-item">Donors</h6>
+                <hr class="dropdown-divider">
+                </hr>
+                <a href="">
+                    <p class="dropdown-item">Giving to LUMS</p>
+                </a>
+                <a href="">
+                    <p class="dropdown-item">Give a day to LUMS Campaign</p>
+                </a>
+                <a href="">
+                    <p class="dropdown-item">LUMS Supporters</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+   
+    <section class="section"><br><br>
+        <div id="card1" class="card mx-auto">
+            <div class="card-title">
+                <h2>Featured News</h2>
+            </div>
+            <div class="card-img">
+                <img class="card-img1 mx-auto d-block"
+                    src="https://lums.edu.pk/sites/default/files/styles/featured_image_news_landing/public/2024-04/M-LuthfullahKhan-slider2_0.jpg?h=79c937a6"
+                    alt="card-img1">
+            </div>
+            <div class="card-body">               
+                    <time datetime="">April 23, 2024</time>               
+                <a href="" class="news-link"><h2 class="news-1sth2">LUMS To House The Extraordinary ‘Lutfullah Khan Sound Archive’</h2></a>
+                <p class="news-p1">LUMS is proud and thrilled to acquire the Lutfullah Khan Sound Archive, the premier repository for
+                    the literary, cultural, musical, and intellectual heritage of Pakistan and the wider region.
+                </p>
+                <a href="#" class="news-link1 btn">Explore more</a>
+            </div>
+        </div>
+
+        <h1 class="news-heading container">News</h1>
+
+        <flexbox class="fl-news1 container">
+            <div class="card" id="card2">
+                <div class="card-img">
+                    <img class="card-img2" src="https://lums.edu.pk/sites/default/files/styles/thumbnail_most_popular_news/public/2024-04/M-LuthfullahKhan-slider2_1.jpg?h=8a73f7af" alt="fl-img1">
+                </div>
+                <div class="card-body">
+                    <time>April 08, 2024</time>
+                    <a href="" class="news-link"><h2 class="news-2h2">Karachi Alumni Get <br> Together For Iftar</h2></a>
+                    <a href="#" class="news-link1 btn">Full Story</a>
+                </div>
+            </div>
+            <div class="card" id="card3">
+                <div class="card-img">
+                    <img class="card-img2" src="https://lums.edu.pk/sites/default/files/styles/thumbnail_most_popular_news/public/2024-04/Bannera-1920-by-600-alumni_0.png?h=21d5bfe4" alt="fl-img2">
+                </div>
+                <div class="card-body">
+                    <time>April 08, 2024</time>
+                    <a href="" class="news-link"><h2 class="news-2h2">LUMS Delegation Engages <br> With Pak-UK Business <br> Council To Strengthen <br> Academia-Industry <br> Collaboration</h2></a>
+                    <a href="#" class="news-link2 btn">Full Story</a>
+                </div>
+            </div>
+            <div class="card" id="card4">
+                <div class="card-img">
+                    <img class="card-img2" src="https://lums.edu.pk/sites/default/files/styles/thumbnail_most_popular_news/public/2024-04/Bannera-1920-by-600-FPCCI_0.png" alt="fl-img3">
+                </div>
+                <div class="card-body">
+                    <time>April 04, 2024</time>
+                    <a href="" class="news-link"><h2 class="news-2h2">A First For Pakistan: LUMS <br> Student Accepted As Silver <br> Scholar For MBA At Yale <br> University</h2></a>
+                    <a href="#" class="news-link3 btn">Full Story</a>
+                </div>
+            </div>
+            <div class="card" id="card5">
+                <div class="card-img">
+                    <img class="card-img2" src="https://lums.edu.pk/sites/default/files/styles/thumbnail_most_popular_news/public/2024-04/HaiderSultan-news_0.jpg?h=8a73f7af" alt="fl-img4">
+                </div>
+                <div class="card-body">
+                    <time>April 03, 2024</time>
+                    <a href="" class="news-link"><h2 class="news-2h2">Meet The 'Heroes': Students <br> Win Top Awards At World <br> Youth Festival In Russia</h2></a>
+                    <a href="#" class="news-link4 btn">Full Story</a>
+                </div>
+            </div>
+        </flexbox>
+        <flexbox class="fl-news2 container">
+            <div class="card" id="card2">
+                <div class="card-img">
+                    <img class="card-img2" src="https://lums.edu.pk/sites/default/files/styles/thumbnail_most_popular_news/public/2024-04/world-festival_0.jpg" alt="fl-img5">
+                </div>
+                <div class="card-body">
+                    <time>March 29, 2024</time>
+                    <a href="" class="news-link"><h2 class="news-2h2">LUMS Hosts Iftar Dinner In <br> Karachi</h2></a>
+                    <a href="#" class="news-link5 btn">Full Story</a>
+                </div>
+            </div>
+            <div class="card" id="card3">
+                <div class="card-img">
+                    <img class="card-img2" src="https://lums.edu.pk/sites/default/files/styles/thumbnail_most_popular_news/public/2024-04/Karachi-Iftar-Dinner_0.jpg?h=2c61d504" alt="fl-img6">
+                </div>
+                <div class="card-body">
+                    <time>March 28, 2024</time>
+                    <a href="" class="news-link"><h2 class="news-2h2">LUMS Appoints Dean Of Syed <br> Ahsan Ali And Syed Maratib <br> Ali School Of Education</h2></a>
+                    <a href="#" class="news-link6 btn">Full Story</a>
+                </div>
+            </div>
+            <div class="card" id="card4">
+                <div class="card-img">
+                    <img class="card-img2" src="https://lums.edu.pk/sites/default/files/styles/thumbnail_most_popular_news/public/2024-03/DEAN-SOE_0.jpg?h=8a73f7af" alt="fl-img7">
+                </div>
+                <div class="card-body">
+                    <time>March 25, 2024</time>
+                    <a href="" class="news-link"><h2 class="news-2h2">LUMS Team Explores <br> Collaboration Prospects With <br> Gujrat Business Community</h2></a>
+                    <a href="#" class="news-link7 btn">Full Story</a>
+                </div>
+            </div>
+            <div class="card" id="card5">
+                <div class="card-img">
+                    <img class="card-img2" src="https://lums.edu.pk/sites/default/files/styles/thumbnail_most_popular_news/public/2024-04/Gujrat-banner-_0.png" alt="fl-img8">
+                </div>
+                <div class="card-body">
+                    <time>April 23, 2024</time>
+                    <a href="" class="news-link"><h2 class="news-2h2">LUMS To House The <br> Extraordinary ‘Lutfullah <br> Khan Sound Archive’</h2></a>
+                    <a href="#" class="news-link8 btn">Full Story</a>
+                </div>
+            </div>
+        </flexbox>
+        <flexbox class="fl-news3 container">
+            <div class="card" id="card2">
+                <div class="card-img">
+                    <img class="card-img2" src="https://lums.edu.pk/sites/default/files/styles/thumbnail_most_popular_news/public/2024-03/Alumni---banner---02_0.jpg?h=0c54e1bd" alt="fl-img9">
+                </div>
+                <div class="card-body">
+                    <time>March 05, 2024</time>
+                    <a href="" class="news-link"><h2 class="news-2h2">LUMS Alum’s Breshna Wins <br> From Over Thousand <br> Competitors At PITCH, Web Summit Qatar’s Start-Up Competition</h2></a>
+                    <a href="#" class="news-link9 btn">Full Story</a>
+                </div>
+            </div>
+            <div class="card" id="card3">
+                <div class="card-img">
+                    <img class="card-img2" src="https://lums.edu.pk/sites/default/files/styles/thumbnail_most_popular_news/public/2024-03/banner---urdu-literature-talk_0.png?h=3e2f19b8" alt="fl-img10">
+                </div>
+                <div class="card-body">
+                    <time>March 05, 2024</time>
+                    <a href="" class="news-link"><h2 class="news-2h2">Elevating Urdu Language <br> And Literature; Concerted <br> Efforts By LUMS</h2></a>
+                    <a href="#" class="news-link10 btn">Full Story</a>
+                </div>
+            </div>
+            <div class="card" id="card4">
+                <div class="card-img">
+                    <img class="card-img2" src="https://lums.edu.pk/sites/default/files/styles/thumbnail_most_popular_news/public/2024-03/GEC_0.png?h=92973709" alt="fl-img11">
+                </div>
+                <div class="card-body">
+                    <time>March 13, 2024</time>
+                    <a href="" class="news-link"><h2 class="news-2h2">Global Entrepreneurship <br> Conference At LUMS Fosters Innovation And Collaboration</h2></a>
+                    <a href="#" class="news-link11 btn">Full Story</a>
+                </div>
+            </div>
+            <div class="card" id="card5">
+                <div class="card-img">
+                    <img class="card-img2" src="https://lums.edu.pk/sites/default/files/styles/thumbnail_most_popular_news/public/2024-03/hr%20carnival%204_0.jpg?h=eadefdfb" alt="fl-img12">
+                </div>
+                <div class="card-body">
+                    <time>March 15, 2024</time>
+                    <a href="" class="news-link"><h2 class="news-2h2">LUMS HR Carnival <br> Extravaganza: A Day Of <br> Unforgettable Community</h2></a>
+                    <a href="#" class="news-link12 btn">Full Story</a>
+                </div>
+            </div>
+        </flexbox>
+        <flexbox class="fl-news4 container">
+            <div class="card" id="card2">
+                <div class="card-img">
+                    <img class="card-img2" src="https://lums.edu.pk/sites/default/files/styles/thumbnail_most_popular_news/public/2024-03/REDC_0.jpg" alt="fl-img13">
+                </div>
+                <div class="card-body">
+                    <time>March 04, 2024</time>
+                    <a href="" class="news-link"><h2 class="news-2h2">Tetra Pak’s Senior <br> Leadership Strengthens Ties With LUMS</h2></a>
+                    <a href="#" class="news-link13 btn">Full Story</a>
+                </div>
+            </div>
+            <div class="card" id="card3">
+                <div class="card-img">
+                    <img class="card-img2" src="https://lums.edu.pk/sites/default/files/styles/thumbnail_most_popular_news/public/2024-03/SDAB-news-banner_0.jpg" alt="fl-img14">
+                </div>
+                <div class="card-body">
+                    <time>March 04, 2024</time>
+                    <a href="" class="news-link"><h2 class="news-2h2">SDSB Luminites Association Brings Together Alumni And LUMS Leadership At Reunion 2024</h2></a>
+                    <a href="#" class="news-link14 btn">Full Story</a>
+                </div>
+            </div>
+            <div class="card" id="card4">
+                <div class="card-img">
+                    <img class="card-img2" src="https://lums.edu.pk/sites/default/files/styles/thumbnail_most_popular_news/public/2024-03/LUMUN_0.jpg" alt="fl-img15">
+                </div>
+                <div class="card-body">
+                    <time>March 01, 2024</time>
+                    <a href="" class="news-link"><h2 class="news-2h2">LUMS Model United Nations Shines On The Global Stage</h2></a>
+                    <a href="#" class="news-link15 btn">Full Story</a>
+                </div>
+            </div>
+            <div class="card" id="card5">
+                <div class="card-img">
+                    <img class="card-img2" src="https://lums.edu.pk/sites/default/files/styles/thumbnail_most_popular_news/public/2024-02/CCLS_0.jpg" alt="fl-img16">
+                </div>
+                <div class="card-body">
+                    <time>February 29, 2024</time>
+                    <a href="" class="news-link"><h2 class="news-2h2">His Excellency Consul <br> General Zhao Shiren <br> Commits Support To The Centre For Chinese Legal Studies At LUMS</h2></a>
+                    <a href="#" class="news-link16 btn">Full Story</a>
+                </div>
+            </div>
+        </flexbox>
+        <flexbox class="fl-news5 container">
+            <div class="card" id="card2">
+                <div class="card-img">
+                    <img class="card-img2" src="https://lums.edu.pk/sites/default/files/styles/thumbnail_most_popular_news/public/2024-02/CIMPA_0.jpg?h=2c61d504" alt="fl-img17">
+                </div>
+                <div class="card-body">
+                    <time>March 29, 2024</time>
+                    <a href="" class="news-link"><h2 class="news-2h2">CIMPA School At LUMS - Fostering A Global Community For Mathematical Excellence</h2></a>
+                    <a href="#" class="news-link17 btn">Full Story</a>
+                </div>
+            </div>
+            <div class="card" id="card3">
+                <div class="card-img">
+                    <img class="card-img2" src="https://lums.edu.pk/sites/default/files/styles/thumbnail_most_popular_news/public/2024-02/Banner1_0.jpg" alt="fl-img18">
+                </div>
+                <div class="card-body">
+                    <time>March 04, 2024</time>
+                    <a href="" class="news-link"><h2 class="news-2h2">Economics Faculty At LUMS Publish Paper In The American Economic Review</h2></a>
+                    <a href="#" class="news-link18 btn">Full Story</a>
+                </div>
+            </div>
+            <div class="card" id="card4">
+                <div class="card-img">
+                    <img class="card-img2" src="https://lums.edu.pk/sites/default/files/styles/thumbnail_most_popular_news/public/2024-02/Young-Membrane-Scientist_0.jpg?h=28bd1c06" alt="fl-img19">
+                </div>
+                <div class="card-body">
+                    <time>March 19, 2024</time>
+                    <a href="" class="news-link"><h2 class="news-2h2">LUMS Faculty Becomes First South-Asian NAMS Young Membrane Scientist <br> Awardee</h2></a>
+                    <a href="#" class="news-link19 btn">Full Story</a>
+                </div>
+            </div>
+            <div class="card" id="card5">
+                <div class="card-img">
+                    <img class="card-img2" src="https://lums.edu.pk/sites/default/files/styles/thumbnail_most_popular_news/public/2024-02/Banner%201920%20by%20600_0.png?h=ba3bdd60" alt="fl-img20">
+                </div>
+                <div class="card-body">
+                    <time>February 16, 2024</time>
+                    <a href="" class="news-link"><h2 class="news-2h2">Road To Empowerment: LUMS And Atlas Honda Collaborate For Women's Mobility</h2></a>
+                    <a href="#" class="news-link20 btn">Full Story</a>
+                </div>
+            </div>
+        </flexbox>
+        <flexbox class="fl-news6 container">
+            <div class="card" id="card2">
+                <div class="card-img">
+                    <img class="card-img2" src="https://lums.edu.pk/sites/default/files/styles/thumbnail_most_popular_news/public/2024-02/palestine3-min.jpg?h=028d043a" alt="fl-img21">
+                </div>
+                <div class="card-body">
+                    <time>March 04, 2024</time>
+                    <a href="" class="news-link"><h2 class="news-2h2">Perspectives On The Palestinian Question: Unveiling Layers Of History, Law, And Power Dynamics</h2></a>
+                    <a href="#" class="news-link21 btn">Full Story</a>
+                </div>
+            </div>
+            <div class="card" id="card3">
+                <div class="card-img">
+                    <img class="card-img2" src="https://lums.edu.pk/sites/default/files/styles/thumbnail_most_popular_news/public/2024-02/cbs%20event%20banner_0.jpeg?h=b0fb40db" alt="fl-img22">
+                </div>
+                <div class="card-body">
+                    <time>March 23, 2024</time>
+                    <a href="" class="news-link"><h2 class="news-2h2">Catalysing Change: A Collaborative Discourse On Social Welfare And Bait-Ul-Maal Policies In Punjab</h2></a>
+                    <a href="#" class="news-link22 btn">Full Story</a>
+                </div>
+            </div>
+            <div class="card" id="card4">
+                <div class="card-img">
+                    <img class="card-img2" src="https://lums.edu.pk/sites/default/files/styles/thumbnail_most_popular_news/public/2024-02/Web%20Banner%20SSL_0.jpg?h=15ffa4c4" alt="fl-img23">
+                </div>
+                <div class="card-body">
+                    <time>March 01, 2024</time>
+                    <a href="" class="news-link"><h2 class="news-2h2">LUMS Summer School 2024</h2></a>
+                    <a href="#" class="news-link23 btn">Full Story</a>
+                </div>
+            </div>
+            <div class="card" id="card5">
+                <div class="card-img">
+                    <img class="card-img2" src="https://lums.edu.pk/sites/default/files/styles/thumbnail_most_popular_news/public/2024-02/Bilal_4.jpg?h=8a73f7af" alt="fl-img24">
+                </div>
+                <div class="card-body">
+                    <time>February 21, 2024</time>
+                    <a href="" class="news-link"><h2 class="news-2h2">From Student To Entrepreneur: The Rise Of An Online Game Distribution Business</h2></a>
+                    <a href="#" class="news-link24 btn">Full Story</a>
+                </div>
+            </div>
+        </flexbox>
+        <flexbox class="fl-news7 container">
+            <div class="card" id="card2">
+                <div class="card-img">
+                    <img class="card-img2" src="https://lums.edu.pk/sites/default/files/styles/thumbnail_most_popular_news/public/2024-02/Syeda%20Fatima%20Binte%20Aziz.jpg" alt="fl-img25">
+                </div>
+                <div class="card-body">
+                    <time>March 04, 2024</time>
+                    <a href="" class="news-link"><h2 class="news-2h2">From Politics-Economics To Pixels: A LUMS Student Explores AI Through Design</h2></a>
+                    <a href="#" class="news-link25 btn">Full Story</a>
+                </div>
+            </div>
+            <div class="card" id="card3">
+                <div class="card-img">
+                    <img class="card-img2" src="https://lums.edu.pk/sites/default/files/styles/thumbnail_most_popular_news/public/2024-02/career%20fair%201_1.jpeg" alt="fl-img26">
+                </div>
+                <div class="card-body">
+                    <time>February 04, 2024</time>
+                    <a href="" class="news-link"><h2 class="news-2h2">February 07, 2024
+                        LUMS Students And Recruiters Network At Annual <br> Career Fair 2024</h2></a>
+                    <a href="#" class="news-link26 btn">Full Story</a>
+                </div>
+            </div>
+            <div class="card" id="card4">
+                <div class="card-img">
+                    <img class="card-img2" src="https://lums.edu.pk/sites/default/files/styles/thumbnail_most_popular_news/public/2024-02/Dean-SBASSE02_0.jpg?h=ba3bdd60" alt="fl-img27">
+                </div>
+                <div class="card-body">
+                    <time>March 22, 2024</time>
+                    <a href="" class="news-link"><h2 class="news-2h2">In Conversation With Dr. Walther Schwarzacher, Dean SBASSE: A Physicist Who Advises Students To Think Strategically</h2></a>
+                    <a href="#" class="news-link27 btn">Full Story</a>
+                </div>
+            </div>
+            <div class="card" id="card5">
+                <div class="card-img">
+                    <img class="card-img2" src="https://lums.edu.pk/sites/default/files/styles/thumbnail_most_popular_news/public/2024-02/AL-Moiz-and-Thal-Industries-MoU-signing_0.jpg?h=25b5df48" alt="fl-img28">
+                </div>
+                <div class="card-body">
+                    <time>March 29, 2024</time>
+                    <a href="" class="news-link"><h2 class="news-2h2">Al Moiz And Thal Industries Sign MoU To Support The LUMS National Outreach Programme</h2></a>
+                    <a href="#" class="news-link28 btn">Full Story</a>
+                </div>
+            </div>
+        </flexbox>
+        <flexbox class="fl-news8 container">
+            <div class="card" id="card2">
+                <div class="card-img">
+                    <img class="card-img2" src="https://lums.edu.pk/sites/default/files/styles/thumbnail_most_popular_news/public/2024-01/emobility%20banner1%20%28002%29_0.jpg?h=40a268f1" alt="fl-img29">
+                </div>
+                <div class="card-body">
+                    <time>January 04, 2024</time>
+                    <a href="" class="news-link"><h2 class="news-2h2">Jointly Funded E-Mobility Centre At LUMS Aims To Drive Electric Vehicle Innovation In Pakistan</h2></a>
+                    <a href="#" class="news-link29 btn">Full Story</a>
+                </div>
+            </div>
+            <div class="card" id="card3">
+                <div class="card-img">
+                    <img class="card-img2" src="https://lums.edu.pk/sites/default/files/styles/thumbnail_most_popular_news/public/2024-01/Jeanette-Forbes-Visit_0.jpg?h=20f52b36" alt="fl-img30">
+                </div>
+                <div class="card-body">
+                    <time>January 14, 2024</time>
+                    <a href="" class="news-link"><h2 class="news-2h2">Scottish Chambers Of Commerce Designated Ambassador To Pakistan Visits LUMS</h2></a>
+                    <a href="#" class="news-link30 btn">Full Story</a>
+                </div>
+            </div>
+            <div class="card" id="card4">
+                <div class="card-img">
+                    <img class="card-img2" src="https://lums.edu.pk/sites/default/files/styles/thumbnail_most_popular_news/public/2024-01/1_0.jpg" alt="fl-img31">
+                </div>
+                <div class="card-body">
+                    <time>January 31, 2024</time>
+                    <a href="" class="news-link"><h2 class="news-2h2">Executive Director Of United Global Initiative Visits LUMS</h2></a>
+                    <a href="#" class="news-link31 btn">Full Story</a>
+                </div>
+            </div>
+            <div class="card" id="card5">
+                <div class="card-img">
+                    <img class="card-img2" src="https://lums.edu.pk/sites/default/files/styles/thumbnail_most_popular_news/public/2024-01/ThinkFest-2024_0.jpg?h=e14d8d63" alt="fl-img32">
+                </div>
+                <div class="card-body">
+                    <time>February 29, 2024</time>
+                    <a href="" class="news-link"><h2 class="news-2h2">LUMS Vice Chancellor, Dr. Ali Cheema Delves Into Strategies For Sustainable Growth In Pakistan At Panel Discussion</h2></a>
+                    <a href="#" class="news-link32 btn">Full Story</a>
+                </div>
+            </div>
+        </flexbox>
+        <!-- Footer_Below -->
+        <footer>
+            <flexbox class="footer1">
+                <div class="ft-div1">
+                    <img class="ft-img" src="https://lums.edu.pk/sites/default/files/inline-images/LUMS%20Logo-white.png" alt="ft-img1">
+                </div>
+                <div class="ft-div2">
+                    <ul class="ft-ul1">
+                        <li><a href="#">Student Affairs</a></li>
+                        <li><a href="#">Acadamic Calendar</a></li>
+                        <li><a href="#">Libarary</a></li>
+                        <li><a href="#">Pay Online</a></li>
+                    </ul>
+                </div>
+                <div class="ft-div3">
+                    <ul class="ft-ul1">
+                        <li><a href="#">Financial Statement</a></li>
+                        <li><a href="#">Phone Directory</a></li>
+                        <li><a href="#">Emergency Service</a></li>
+                        <li><a href="#">Campus Mail</a></li>
+                    </ul>
+                </div>
+                <div class="ft-div4">
+                    <ul class="ft-ul1">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Directions To LUMS
+                        </a></li>
+                        <li><a href="#">Career</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                       
+                    </ul>
+                </div>
+            </flexbox>
+                <img class="ft-img2" src="https://lums.edu.pk/themes/contrib/lums/images/talk.png" alt="ft-img2">
+            <flexbox class="footer2">
+                <div class="ft-div6">
+                <p>  DHA, Lahore Cantt. <br>54792, <br>    
+                    Lahore, Pakistan <br><br>
+                    Phone: +92 42 3560 8000</p>  
+                </div>
+                <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+                </div>
+               
+            </flexbox>
+            <button>Sign Up</button>
+            </footer>
+</body>
+
+</html>  
