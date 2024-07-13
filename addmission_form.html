@@ -303,7 +303,7 @@
             margin: -0.6rem -0.6rem 5vh -0.6rem;
             color: white;
         }
-        button {
+        #apply_btn {
             background-color: #fca503;
             font-weight: bolder;
             padding: 10px;
@@ -335,7 +335,7 @@
             padding: 10px;
             background-color: whitesmoke;
         }
-        button {
+        #apply_btn {
           width: 100%;
         }
         form .cod{
@@ -405,7 +405,7 @@
             font-size: 40px;
             margin-right: 40px;
         }
-      button{
+      #sign-up{
             background-color: blue;
             color: white;
           position: absolute;
@@ -417,7 +417,7 @@
             border: none;
             text-align: center;
             border-radius: 10px;
-            bottom: 30%;
+            top: 360%;
         
             
         }
@@ -435,6 +435,11 @@
                 margin-left: 60px;
             }
         }
+        @media (max-width: 1240px) {
+            #sign-up {
+                top: 408vh;
+            }
+        }
         @media (max-width:1110px) {
             .ft-div2 {
                 margin-left: 50px;
@@ -442,6 +447,9 @@
              .ft-div3, .ft-div4 {
             margin-left: 15px;
         }
+        }
+        @media (max-width: 970px) {
+            
         }
         @media (max-width:950px) {
             .ft-div2, .ft-div3, .ft-div4 {
@@ -483,7 +491,7 @@
             left: 37%;
             color: white;
         }
-        button{
+        #sign-up{
           position: absolute;
             left: 41%;
             bottom: -25%;  
@@ -495,7 +503,7 @@
         }
         }
         @media (max-width:665px) {
-            button{
+            #sign-up{
           position: absolute;
             left: 43%;
             bottom: -60%;
@@ -505,7 +513,7 @@
             .ft-div6 {
                 left: 29%;
             }
-            button{
+            #sign-up{
           position: absolute;
             left: 38%;
             bottom: -60%;
@@ -517,11 +525,6 @@
             font-size: 30px;
         }
         
-        }
-        @media (max-width:490px) {
-            .icons {
-                margin-left: 11%;
-            }
         }
         @media (max-width:490px) {
             .footer1, .footer2 {
@@ -556,7 +559,7 @@
         <label for="click"><i class="fa-solid fa-bars icon"></i></label>
         <input  type="checkbox" name="click" id="click">
         <ul>
-            <li><a href="lums header.html">HOME</a></li>
+            <li><a href="index.html">HOME</a></li>
             <li><a href="addmission_form.html" target="_blank">APPLY</a></li>
             <li><a href="lums news.html" target="_blank">NEWS</a></li>
             <li><a href="lums sign up.html" target="_blank">Sign In</a></li>
@@ -743,7 +746,7 @@
         </select><br><br>
 
 
-        <button class="col-lg-12 col-sm-12 col-md-12">Apply Now</button>
+        <button id="apply_btn" class="col-lg-12 col-sm-12 col-md-12">Apply Now</button>
         <input class="reset" type="reset">
     </form>
     <!-- Footer_Bolow -->
@@ -795,6 +798,6 @@
             </div>
            
         </flexbox>
-        <button>Sign Up</button>
+        <button id="sign-up">Sign Up</button>
         </footer>
 </body>
